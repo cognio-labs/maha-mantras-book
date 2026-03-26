@@ -526,7 +526,7 @@ const BenefitsSection = () => {
     <section id="benefits" className="py-32 px-6 bg-parchment text-maroon-dark">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-24">
-          <span className="text-gold-muted uppercase tracking-[0.3em] text-xs mb-4 block font-bold">The Transformation</span>
+          <span className="text-maroon-dark/80 uppercase tracking-[0.3em] text-xs mb-4 block font-bold">The Transformation</span>
           <h2 className="text-5xl md:text-7xl font-serif">What You Will Gain</h2>
         </div>
 
@@ -538,7 +538,7 @@ const BenefitsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="p-8 border border-maroon-dark/10 rounded-2xl hover:border-gold/50 transition-all duration-500 group"
+              className="p-8 border border-maroon-dark/10 rounded-2xl hover:border-maroon/50 transition-all duration-500 group"
             >
               <div className="w-12 h-12 bg-maroon text-parchment rounded-full flex items-center justify-center mb-6 group-hover:bg-gold transition-colors">
                 {benefit.icon}
@@ -593,7 +593,7 @@ const PreviewSection = () => {
             <div className="h-full border border-maroon-dark/5 p-8 flex flex-col justify-between">
               <div className="flex justify-between items-start">
                 <span className="text-[10px] uppercase tracking-widest text-maroon-dark/40">Chapter 04</span>
-                <DharmaChakra className="w-6 h-6 text-gold/40" />
+                <DharmaChakra className="w-6 h-6 text-maroon-dark/40" />
               </div>
               <div className="max-w-xs">
                 <h3 className="font-serif text-4xl text-maroon-dark mb-6">The Vibration of Silence</h3>
@@ -605,7 +605,7 @@ const PreviewSection = () => {
                 </div>
               </div>
               <div className="flex justify-center">
-                <LotusGeometry className="w-24 h-24 text-gold/10" />
+                <LotusGeometry className="w-24 h-24 text-maroon-dark/10" />
               </div>
               <div className="text-center">
                 <span className="text-[8px] uppercase tracking-widest text-maroon-dark/40">Page 108</span>
@@ -646,18 +646,18 @@ const AuthorSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <span className="text-gold-muted uppercase tracking-[0.3em] text-xs mb-4 block font-bold">The Enlightened Master</span>
+            <span className="text-maroon-dark/80 uppercase tracking-[0.3em] text-xs mb-4 block font-bold">The Enlightened Master</span>
             <h2 className="text-5xl md:text-7xl font-serif mb-8">Sākṣhī Shree</h2>
             <p className="text-xl text-maroon-dark/70 font-light leading-relaxed mb-8">
               Born Rām Krishna Upādhyāya, Sākṣhī Shree is a rare triad: an enlightened master, a householder, and a former civil servant. 
               Mentored by Swami Sudarshanacharya Ji Maharaj, he bridges the gap between ancient Himalayan wisdom and the modern boardroom.
             </p>
-            <p className="text-lg text-maroon-dark/60 font-light leading-relaxed mb-12 italic border-l-4 border-gold/20 pl-8">
+            <p className="text-lg text-maroon-dark/60 font-light leading-relaxed mb-12 italic border-l-4 border-maroon-dark/30 pl-8">
               "I do not teach any religion; I bring out the best of philosophies to enhance the lives of those I touch. 
               The battlefield of Kurukshetra has not disappeared—it has only multiplied. It now exists within every individual navigating ambition and conscience."
             </p>
             <div className="flex items-center gap-6">
-              <div className="w-12 h-px bg-gold-muted" />
+              <div className="w-12 h-px bg-maroon-dark" />
               <span className="font-serif italic text-xl">Founder of the Science Divine Foundation</span>
             </div>
           </motion.div>
@@ -908,3 +908,4 @@ export default function App() {
     </div>
   );
 }
+
