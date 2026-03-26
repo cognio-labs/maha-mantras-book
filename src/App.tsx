@@ -126,7 +126,7 @@ const Hero = () => {
   const rotate = useTransform(scrollY, [0, 500], [0, 15]);
 
   return (
-    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden sacred-grid bg-maroon-dark">
+    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden sacred-grid hero-red-bg">
       <div className="max-w-7xl mx-auto px-6 w-full grid lg:grid-cols-2 gap-12 lg:gap-24 items-center relative z-10 py-20">
         
         {/* Left Content: Text */}
@@ -136,12 +136,12 @@ const Hero = () => {
           transition={{ duration: 1 }}
           className="text-left order-2 lg:order-1"
         >
-          <span className="text-gold uppercase tracking-[0.5em] text-xs mb-6 block font-bold">The Sacred Discipline</span>
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif mb-8 tracking-tight leading-[0.9] text-parchment">
+          <span className="text-white/80 uppercase tracking-[0.5em] text-xs mb-6 block font-bold">The Sacred Discipline</span>
+          <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif mb-8 tracking-tight leading-[0.9] hero-heading-red">
             Maha <br />
-            <span className="text-gold-gradient italic">Mantras</span>
+            <span className="hero-heading-red italic">Mantras</span>
           </h1>
-          <p className="text-xl md:text-2xl text-parchment/60 font-light tracking-wide mb-12 max-w-lg">
+          <p className="text-xl md:text-2xl text-white/80 font-light tracking-wide mb-12 max-w-lg">
             A structural blueprint for your consciousness. Discipline your mind. Awaken inner power.
           </p>
           
@@ -908,5 +908,6 @@ export default function App() {
     </div>
   );
 }
+
 
 

@@ -23,6 +23,15 @@
   }
 }
 
+.hero-red-bg {
+  background-color: #a80000;
+  background-image: linear-gradient(135deg, #ff5c5c 0%, #d40000 45%, #7a0000 100%);
+}
+
+.hero-heading-red {
+  color: #ff4d4d;
+  text-shadow: 0 14px 30px rgba(90, 0, 0, 0.45);
+}
 .premium-theme {
   --red-500: #ff0000;
   --red-600: #d40000;
@@ -120,6 +129,7 @@
 ::-webkit-scrollbar-thumb {
   @apply bg-gold/20 rounded-full hover:bg-gold/40 transition-colors;
 }
+
 
 
 
