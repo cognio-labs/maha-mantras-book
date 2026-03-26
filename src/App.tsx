@@ -247,7 +247,7 @@ const ChaptersSection = () => {
       num: "01",
       title: "Find and Live Your Svadharma",
       verse: "shreyan svadharmo vigunah paradharmat sv-anushthitat...",
-      translation: "Oneâ€™s own dharma, despite its imperfections, is superior to the well-executed dharma of another.",
+      translation: "One's own dharma, despite its imperfections, is superior to the well-executed dharma of another.",
       desc: "Discover the natural rhythm of your being. Svadharma is choosing honesty over comfort and living in line with your sacred nature, even when it hurts.",
       takeaway: "Nurture your unique seed until it blooms into its most beautiful form.",
       page: "37"
@@ -264,7 +264,7 @@ const ChaptersSection = () => {
     {
       num: "03",
       title: "Step Beyond Karma, Gyana and Bhakti",
-      verse: "traigunya-vishaya veda nistraigunyo bhÄva Arjuna...",
+      verse: "traigunya-vishaya veda nistraigunyo bhava Arjuna...",
       translation: "The Vedas deal with the three gunas, O Arjuna. But you, rise above these three qualities.",
       desc: "Understand the three layers of the human mind: action, thought, and emotion. Transcend these 'boats' to reach the shore of pure awareness.",
       takeaway: "Meditation is the medicine; the three paths are merely the vehicles that carry it.",
@@ -282,7 +282,7 @@ const ChaptersSection = () => {
     {
       num: "05",
       title: "Transcend to Gunatita",
-      verse: "gunan etan atitya trin dehi deha samudbhÄvan...",
+      verse: "gunan etan atitya trin dehi deha samudbhavan...",
       translation: "When the embodied one rises above these three gunas, he attains immortality.",
       desc: "Move beyond the triad of Sattva (clarity), Rajas (activity), and Tamas (inertia). Live not as a person, but as a presence in the fourth dimension.",
       takeaway: "Freedom comes from waking up the witness who sees the dance of the gunas.",
@@ -633,7 +633,7 @@ const AuthorSection = () => {
           >
             <img 
               src="https://picsum.photos/seed/spiritual-author/800/1000" 
-              alt="SÄká¹£hÄ« Shree" 
+              alt="Sakshi Shree" 
               className="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
               referrerPolicy="no-referrer"
             />
@@ -647,14 +647,14 @@ const AuthorSection = () => {
             viewport={{ once: true }}
           >
             <span className="text-maroon-dark/80 uppercase tracking-[0.3em] text-xs mb-4 block font-bold">The Enlightened Master</span>
-            <h2 className="text-5xl md:text-7xl font-serif mb-8">SÄká¹£hÄ« Shree</h2>
+            <h2 className="text-5xl md:text-7xl font-serif mb-8">Sakshi Shree</h2>
             <p className="text-xl text-maroon-dark/70 font-light leading-relaxed mb-8">
-              Born RÄm Krishna UpÄdhyÄya, SÄká¹£hÄ« Shree is a rare triad: an enlightened master, a householder, and a former civil servant. 
+              Born Ram Krishna Upadhyaya, Sakshi Shree is a rare triad: an enlightened master, a householder, and a former civil servant. 
               Mentored by Swami Sudarshanacharya Ji Maharaj, he bridges the gap between ancient Himalayan wisdom and the modern boardroom.
             </p>
             <p className="text-lg text-maroon-dark/60 font-light leading-relaxed mb-12 italic border-l-4 border-maroon-dark/30 pl-8">
               "I do not teach any religion; I bring out the best of philosophies to enhance the lives of those I touch. 
-              The battlefield of Kurukshetra has not disappearedâ€”it has only multiplied. It now exists within every individual navigating ambition and conscience."
+              The battlefield of Kurukshetra has not disappeared—it has only multiplied. It now exists within every individual navigating ambition and conscience."
             </p>
             <div className="flex items-center gap-6">
               <div className="w-12 h-px bg-maroon-dark" />
@@ -775,8 +775,8 @@ const PreOrderSection = () => {
 
           <div className="flex flex-col items-center gap-8">
             <div className="flex items-baseline gap-4">
-              <span className="text-neutral-400 line-through text-2xl font-light">â‚¹2,499</span>
-              <span className="text-neutral-900 text-5xl font-serif">â‚¹1,499</span>
+              <span className="text-neutral-400 line-through text-2xl font-light">Rs. 2,499</span>
+              <span className="text-neutral-900 text-5xl font-serif">Rs. 1,499</span>
             </div>
             <button className="w-full md:w-auto px-16 py-6 btn-primary font-bold uppercase tracking-[0.2em]">
               Reserve Your Copy Now
@@ -805,8 +805,8 @@ const FinalImpact = () => {
         className="max-w-4xl relative z-10"
       >
         <h2 className="text-4xl md:text-7xl font-serif italic leading-tight text-neutral-900">
-          â€œThis is not just a book. <br />
-          It is a discipline system for your mind.â€
+          "This is not just a book. <br />
+          It is a discipline system for your mind."
         </h2>
         <div className="mt-16 flex justify-center">
           <LotusGeometry className="w-12 h-12 text-gold/20" />
@@ -818,8 +818,8 @@ const FinalImpact = () => {
 
 const GlossarySection = () => {
   const terms = [
-    { term: "SÄká¹£hÄ«", meaning: "The inner witness; awareness that observes without judgement." },
-    { term: "Svadharma", meaning: "Oneâ€™s own right path; what is truly â€˜yours to doâ€™." },
+    { term: "Sakshi", meaning: "The inner witness; awareness that observes without judgement." },
+    { term: "Svadharma", meaning: "One's own right path; what is truly 'yours to do'." },
     { term: "Nishkama Karma", meaning: "Action performed without clinging to results; pure doing." },
     { term: "Gunatita", meaning: "One who lives beyond the gunas; free of compulsive reactions." },
     { term: "Atman", meaning: "The Self; pure awareness underlying body and mind." },
@@ -879,7 +879,7 @@ const Footer = () => {
         
         <div className="text-center">
           <p className="text-[10px] uppercase tracking-[0.3em] text-neutral-400">
-            Â© 2026 Maha Mantras Publishing. All Rights Reserved.
+            (c) 2026 Maha Mantras Publishing. All Rights Reserved.
           </p>
         </div>
       </div>
@@ -908,6 +908,8 @@ export default function App() {
     </div>
   );
 }
+
+
 
 
 
