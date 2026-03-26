@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -205,7 +205,7 @@ const Hero = () => {
 
 const AuthoritySection = () => {
   return (
-    <section id="book" className="py-32 px-6 bg-maroon-dark relative overflow-hidden">
+    <section id="book" className="py-32 px-6 section-book-bg section-smooth section-depth relative overflow-hidden text-maroon-dark">
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -213,13 +213,13 @@ const AuthoritySection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <LotusGeometry className="w-16 h-16 text-gold/20 mx-auto mb-12" />
+          <LotusGeometry className="w-16 h-16 text-maroon/20 mx-auto mb-12" />
           <h2 className="text-4xl md:text-6xl font-serif mb-12 leading-tight">
             The world is loud. <br />
-            <span className="text-gold italic">Your mind doesn't have to be.</span>
+            <span className="text-maroon italic">Your mind doesn't have to be.</span>
           </h2>
-          <div className="space-y-8 text-lg md:text-xl text-parchment/70 font-light leading-relaxed max-w-2xl mx-auto">
-            <p className="italic text-gold/80 mb-8">
+          <div className="space-y-8 text-lg md:text-xl text-maroon-dark/70 font-light leading-relaxed max-w-2xl mx-auto">
+            <p className="italic text-maroon/80 mb-8">
               "Who am I beyond my roles? What am I truly here for? Is there a way to live without anxiety, without conflict?"
             </p>
             <p>
@@ -227,13 +227,13 @@ const AuthoritySection = () => {
               Most people live in a state of mental fragmentation, pulled by every notification and impulse.
             </p>
             <p>
-              <span className="text-parchment font-medium">Maha Mantras</span> is not just a book of chants. 
+              <span className="text-maroon-dark font-medium">Maha Mantras</span> is not just a book of chants. 
               It is a structural blueprint for your consciousness. It uses the ancient science of sound 
               to build an inner fortress that no external chaos can penetrate.
             </p>
           </div>
           <div className="mt-16 flex justify-center">
-            <div className="w-24 h-px bg-gold/30" />
+            <div className="w-24 h-px bg-maroon/30" />
           </div>
         </motion.div>
       </div>
@@ -247,7 +247,7 @@ const ChaptersSection = () => {
       num: "01",
       title: "Find and Live Your Svadharma",
       verse: "shreyan svadharmo vigunah paradharmat sv-anushthitat...",
-      translation: "One’s own dharma, despite its imperfections, is superior to the well-executed dharma of another.",
+      translation: "Oneâ€™s own dharma, despite its imperfections, is superior to the well-executed dharma of another.",
       desc: "Discover the natural rhythm of your being. Svadharma is choosing honesty over comfort and living in line with your sacred nature, even when it hurts.",
       takeaway: "Nurture your unique seed until it blooms into its most beautiful form.",
       page: "37"
@@ -264,7 +264,7 @@ const ChaptersSection = () => {
     {
       num: "03",
       title: "Step Beyond Karma, Gyana and Bhakti",
-      verse: "traigunya-vishaya veda nistraigunyo bhāva Arjuna...",
+      verse: "traigunya-vishaya veda nistraigunyo bhÄva Arjuna...",
       translation: "The Vedas deal with the three gunas, O Arjuna. But you, rise above these three qualities.",
       desc: "Understand the three layers of the human mind: action, thought, and emotion. Transcend these 'boats' to reach the shore of pure awareness.",
       takeaway: "Meditation is the medicine; the three paths are merely the vehicles that carry it.",
@@ -282,7 +282,7 @@ const ChaptersSection = () => {
     {
       num: "05",
       title: "Transcend to Gunatita",
-      verse: "gunan etan atitya trin dehi deha samudbhāvan...",
+      verse: "gunan etan atitya trin dehi deha samudbhÄvan...",
       translation: "When the embodied one rises above these three gunas, he attains immortality.",
       desc: "Move beyond the triad of Sattva (clarity), Rajas (activity), and Tamas (inertia). Live not as a person, but as a presence in the fourth dimension.",
       takeaway: "Freedom comes from waking up the witness who sees the dance of the gunas.",
@@ -336,7 +336,7 @@ const ChaptersSection = () => {
   ];
 
   return (
-    <section id="chapters" className="py-32 px-6 bg-maroon-dark relative overflow-hidden border-y border-gold/10">
+    <section id="chapters" className="py-32 px-6 section-chapters-bg section-smooth section-depth relative overflow-hidden border-y border-gold/10">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
           <div className="max-w-2xl">
@@ -523,7 +523,7 @@ const BenefitsSection = () => {
   ];
 
   return (
-    <section id="benefits" className="py-32 px-6 bg-parchment text-maroon-dark">
+    <section id="benefits" className="py-32 px-6 section-benefits-bg section-smooth section-depth text-maroon-dark">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-24">
           <span className="text-maroon-dark/80 uppercase tracking-[0.3em] text-xs mb-4 block font-bold">The Transformation</span>
@@ -557,7 +557,7 @@ const BenefitsSection = () => {
 
 const PreviewSection = () => {
   return (
-    <section id="preview" className="py-32 px-6 bg-maroon-dark relative overflow-hidden">
+    <section id="preview" className="py-32 px-6 section-preview-bg section-smooth section-depth relative overflow-hidden">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-20">
         <div className="flex-1">
           <motion.div
@@ -622,7 +622,7 @@ const PreviewSection = () => {
 
 const AuthorSection = () => {
   return (
-    <section id="author" className="py-32 px-6 bg-parchment text-maroon-dark">
+    <section id="author" className="py-32 px-6 section-author-bg section-smooth section-depth text-maroon-dark">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-20">
         <div className="w-full md:w-1/3">
           <motion.div
@@ -633,7 +633,7 @@ const AuthorSection = () => {
           >
             <img 
               src="https://picsum.photos/seed/spiritual-author/800/1000" 
-              alt="Sākṣhī Shree" 
+              alt="SÄká¹£hÄ« Shree" 
               className="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
               referrerPolicy="no-referrer"
             />
@@ -647,14 +647,14 @@ const AuthorSection = () => {
             viewport={{ once: true }}
           >
             <span className="text-maroon-dark/80 uppercase tracking-[0.3em] text-xs mb-4 block font-bold">The Enlightened Master</span>
-            <h2 className="text-5xl md:text-7xl font-serif mb-8">Sākṣhī Shree</h2>
+            <h2 className="text-5xl md:text-7xl font-serif mb-8">SÄká¹£hÄ« Shree</h2>
             <p className="text-xl text-maroon-dark/70 font-light leading-relaxed mb-8">
-              Born Rām Krishna Upādhyāya, Sākṣhī Shree is a rare triad: an enlightened master, a householder, and a former civil servant. 
+              Born RÄm Krishna UpÄdhyÄya, SÄká¹£hÄ« Shree is a rare triad: an enlightened master, a householder, and a former civil servant. 
               Mentored by Swami Sudarshanacharya Ji Maharaj, he bridges the gap between ancient Himalayan wisdom and the modern boardroom.
             </p>
             <p className="text-lg text-maroon-dark/60 font-light leading-relaxed mb-12 italic border-l-4 border-maroon-dark/30 pl-8">
               "I do not teach any religion; I bring out the best of philosophies to enhance the lives of those I touch. 
-              The battlefield of Kurukshetra has not disappeared—it has only multiplied. It now exists within every individual navigating ambition and conscience."
+              The battlefield of Kurukshetra has not disappearedâ€”it has only multiplied. It now exists within every individual navigating ambition and conscience."
             </p>
             <div className="flex items-center gap-6">
               <div className="w-12 h-px bg-maroon-dark" />
@@ -775,8 +775,8 @@ const PreOrderSection = () => {
 
           <div className="flex flex-col items-center gap-8">
             <div className="flex items-baseline gap-4">
-              <span className="text-parchment/40 line-through text-2xl font-light">₹2,499</span>
-              <span className="text-parchment text-5xl font-serif">₹1,499</span>
+              <span className="text-parchment/40 line-through text-2xl font-light">â‚¹2,499</span>
+              <span className="text-parchment text-5xl font-serif">â‚¹1,499</span>
             </div>
             <button className="w-full md:w-auto px-16 py-6 bg-gold text-maroon-dark font-bold uppercase tracking-[0.2em] rounded-full hover:bg-white hover:scale-105 transition-all duration-500 shadow-2xl shadow-gold/20">
               Reserve Your Copy Now
@@ -805,8 +805,8 @@ const FinalImpact = () => {
         className="max-w-4xl relative z-10"
       >
         <h2 className="text-4xl md:text-7xl font-serif italic leading-tight text-parchment">
-          “This is not just a book. <br />
-          It is a discipline system for your mind.”
+          â€œThis is not just a book. <br />
+          It is a discipline system for your mind.â€
         </h2>
         <div className="mt-16 flex justify-center">
           <LotusGeometry className="w-12 h-12 text-gold/20" />
@@ -818,8 +818,8 @@ const FinalImpact = () => {
 
 const GlossarySection = () => {
   const terms = [
-    { term: "Sākṣhī", meaning: "The inner witness; awareness that observes without judgement." },
-    { term: "Svadharma", meaning: "One’s own right path; what is truly ‘yours to do’." },
+    { term: "SÄká¹£hÄ«", meaning: "The inner witness; awareness that observes without judgement." },
+    { term: "Svadharma", meaning: "Oneâ€™s own right path; what is truly â€˜yours to doâ€™." },
     { term: "Nishkama Karma", meaning: "Action performed without clinging to results; pure doing." },
     { term: "Gunatita", meaning: "One who lives beyond the gunas; free of compulsive reactions." },
     { term: "Atman", meaning: "The Self; pure awareness underlying body and mind." },
@@ -879,7 +879,7 @@ const Footer = () => {
         
         <div className="text-center">
           <p className="text-[10px] uppercase tracking-[0.3em] text-parchment/20">
-            © 2026 Maha Mantras Publishing. All Rights Reserved.
+            Â© 2026 Maha Mantras Publishing. All Rights Reserved.
           </p>
         </div>
       </div>
@@ -891,7 +891,7 @@ const Footer = () => {
 
 export default function App() {
   return (
-    <div className="bg-maroon-dark text-parchment selection:bg-gold/30">
+    <div className="bg-maroon-dark text-parchment selection:bg-gold/30 premium-theme">
       <Navbar />
       <Hero />
       <AuthoritySection />
@@ -908,4 +908,5 @@ export default function App() {
     </div>
   );
 }
+
 
