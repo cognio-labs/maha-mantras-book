@@ -51,8 +51,8 @@ const Navbar = () => {
           animate={{ opacity: 1, x: 0 }}
           className="flex items-center gap-3"
         >
-          <DharmaChakra className="w-8 h-8 text-gold" />
-          <span className="font-serif text-xl tracking-widest uppercase text-parchment">Maha Mantras</span>
+          <DharmaChakra className="w-8 h-8 text-red-600" />
+          <span className="font-serif text-xl tracking-widest uppercase text-neutral-900">Maha Mantras</span>
         </motion.div>
 
         {/* Desktop Nav */}
@@ -72,7 +72,7 @@ const Navbar = () => {
           <motion.button
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="px-6 py-2 bg-gold text-maroon-dark text-xs uppercase font-bold tracking-widest rounded-full hover:bg-white transition-all duration-300"
+            className="px-6 py-2 btn-primary text-xs uppercase font-bold tracking-widest"
           >
             Pre-Order
           </motion.button>
@@ -109,7 +109,7 @@ const Navbar = () => {
                   {link.name}
                 </a>
               ))}
-              <button className="mt-8 px-8 py-4 bg-gold text-maroon-dark text-lg uppercase font-bold tracking-widest rounded-full">
+              <button className="mt-8 px-8 py-4 btn-primary text-lg uppercase font-bold tracking-widest">
                 Pre-Order Now
               </button>
             </div>
@@ -137,21 +137,21 @@ const Hero = () => {
           className="text-left order-2 lg:order-1"
         >
           <span className="text-white/80 uppercase tracking-[0.5em] text-xs mb-6 block font-bold">The Sacred Discipline</span>
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif mb-8 tracking-tight leading-[0.9] hero-heading-red">
+          <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif mb-8 tracking-tight leading-[0.9] text-white">
             Maha <br />
             <span className="hero-heading-red italic">Mantras</span>
           </h1>
-          <p className="text-xl md:text-2xl text-white/80 font-light tracking-wide mb-12 max-w-lg">
+          <p className="text-xl md:text-2xl text-white/90 font-light tracking-wide mb-12 max-w-lg">
             A structural blueprint for your consciousness. Discipline your mind. Awaken inner power.
           </p>
           
           <div className="flex flex-col sm:flex-row items-start gap-6">
-            <button className="w-full sm:w-auto px-10 py-5 bg-gold text-maroon-dark font-bold uppercase tracking-widest rounded-full hover:bg-white hover:scale-105 transition-all duration-300 shadow-xl shadow-gold/10">
+            <button className="w-full sm:w-auto px-10 py-5 btn-primary font-bold uppercase tracking-widest">
               Pre-Order Now
             </button>
             <button 
               onClick={() => document.getElementById('chapters')?.scrollIntoView({ behavior: 'smooth' })}
-              className="w-full sm:w-auto px-10 py-5 border border-parchment/20 text-parchment font-bold uppercase tracking-widest rounded-full hover:bg-parchment hover:text-maroon-dark transition-all duration-300"
+              className="w-full sm:w-auto px-10 py-5 btn-secondary font-bold uppercase tracking-widest"
             >
               Read Sample
             </button>
@@ -165,7 +165,7 @@ const Hero = () => {
             style={{ y: y1, rotate }}
             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] h-[140%] opacity-15 pointer-events-none"
           >
-            <MandalaGrid className="w-full h-full text-gold" />
+            <MandalaGrid className="w-full h-full text-red-200" />
           </motion.div>
 
           {/* Book Mockup */}
@@ -196,8 +196,8 @@ const Hero = () => {
         transition={{ delay: 2 }}
         className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4"
       >
-        <span className="text-[10px] uppercase tracking-[0.4em] text-gold/40">Scroll to Begin</span>
-        <div className="w-px h-12 bg-gradient-to-b from-gold/40 to-transparent" />
+        <span className="text-[10px] uppercase tracking-[0.4em] text-white/60">Scroll to Begin</span>
+        <div className="w-px h-12 bg-gradient-to-b from-white/50 to-transparent" />
       </motion.div>
     </section>
   );
@@ -336,19 +336,19 @@ const ChaptersSection = () => {
   ];
 
   return (
-    <section id="chapters" className="py-32 px-6 section-chapters-bg section-smooth section-depth relative overflow-hidden border-y border-gold/10">
+    <section id="chapters" className="py-32 px-6 section-white section-smooth section-depth relative overflow-hidden border-y border-neutral-200/80">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
           <div className="max-w-2xl">
-            <span className="text-gold uppercase tracking-[0.3em] text-xs mb-4 block font-bold">The Sacred Journey</span>
+            <span className="text-red-700 uppercase tracking-[0.3em] text-xs mb-4 block font-bold">The Sacred Journey</span>
             <h2 className="text-5xl md:text-8xl font-serif leading-none">The Ten Maha Mantras</h2>
           </div>
-          <p className="text-parchment/40 uppercase tracking-widest text-xs font-medium pb-4">
+          <p className="text-neutral-500 uppercase tracking-widest text-xs font-medium pb-4">
             Extracted from 364 Pages of Wisdom
           </p>
         </div>
 
-        <div className="grid gap-px bg-gold/10 border border-gold/10">
+        <div className="grid gap-px bg-neutral-200/60 border border-neutral-200">
           {chapters.map((chapter, i) => (
             <motion.div
               key={chapter.num}
@@ -356,47 +356,47 @@ const ChaptersSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.05 }}
-              className="group relative bg-maroon-dark p-8 md:p-16 flex flex-col gap-10 hover:bg-maroon/10 transition-all duration-700"
+              className="group relative bg-white p-8 md:p-16 flex flex-col gap-10 hover:bg-red-50/60 transition-all duration-700 border border-neutral-200/70 shadow-sm"
             >
               <div className="flex flex-col md:flex-row gap-8 md:items-start justify-between">
                 <div className="flex items-baseline gap-6">
-                  <span className="font-serif text-gold/20 text-4xl group-hover:text-gold transition-colors duration-500">{chapter.num}</span>
+                  <span className="font-serif text-red-200 text-4xl group-hover:text-red-700 transition-colors duration-500">{chapter.num}</span>
                   <div className="space-y-2">
-                    <h3 className="text-3xl md:text-5xl font-serif text-parchment group-hover:text-gold transition-colors duration-500">{chapter.title}</h3>
-                    <p className="text-gold/40 font-serif italic text-lg max-w-xl leading-snug">"{chapter.verse}"</p>
+                    <h3 className="text-3xl md:text-5xl font-serif text-neutral-900 group-hover:text-red-700 transition-colors duration-500">{chapter.title}</h3>
+                    <p className="text-red-700/60 font-serif italic text-lg max-w-xl leading-snug">"{chapter.verse}"</p>
                   </div>
                 </div>
                 <div className="flex flex-col items-end gap-2">
-                  <span className="text-[10px] uppercase tracking-[0.3em] text-gold/40">Chapter Page</span>
-                  <span className="font-serif text-3xl text-gold/60">{chapter.page}</span>
+                  <span className="text-[10px] uppercase tracking-[0.3em] text-neutral-500">Chapter Page</span>
+                  <span className="font-serif text-3xl text-red-700">{chapter.page}</span>
                 </div>
               </div>
               
-              <div className="grid md:grid-cols-2 gap-12 border-t border-gold/5 pt-10">
+              <div className="grid md:grid-cols-2 gap-12 border-t border-neutral-200 pt-10">
                 <div className="space-y-6">
                   <div className="space-y-2">
-                    <span className="text-[10px] uppercase tracking-widest text-gold font-bold">The Essence</span>
-                    <p className="text-parchment/70 font-light leading-relaxed text-lg">
+                    <span className="text-[10px] uppercase tracking-widest text-red-700 font-bold">The Essence</span>
+                    <p className="text-neutral-600 font-light leading-relaxed text-lg">
                       {chapter.desc}
                     </p>
                   </div>
-                  <div className="p-6 bg-gold/5 border-l-2 border-gold/30 italic text-parchment/90">
+                  <div className="p-6 bg-red-50 border-l-2 border-red-200 italic text-neutral-700">
                     {chapter.translation}
                   </div>
                 </div>
 
                 <div className="space-y-6 flex flex-col justify-between">
                   <div className="space-y-2">
-                    <span className="text-[10px] uppercase tracking-widest text-gold font-bold">Key Takeaway</span>
-                    <p className="text-parchment/80 font-medium text-xl leading-relaxed">
+                    <span className="text-[10px] uppercase tracking-widest text-red-700 font-bold">Key Takeaway</span>
+                    <p className="text-neutral-800 font-medium text-xl leading-relaxed">
                       {chapter.takeaway}
                     </p>
                   </div>
                   
                   <div className="flex justify-end">
-                    <button className="flex items-center gap-3 text-[10px] uppercase tracking-[0.2em] text-gold hover:text-white transition-colors group/btn">
+                    <button className="flex items-center gap-3 text-[10px] uppercase tracking-[0.2em] text-red-700 hover:text-red-900 transition-colors group/btn">
                       Explore this mantra
-                      <div className="w-8 h-8 rounded-full border border-gold/20 flex items-center justify-center group-hover/btn:bg-gold group-hover/btn:text-maroon-dark transition-all">
+                      <div className="w-8 h-8 rounded-full border border-red-200 flex items-center justify-center group-hover/btn:bg-red-600 group-hover/btn:text-white transition-all">
                         <ArrowRight size={14} />
                       </div>
                     </button>
@@ -443,15 +443,15 @@ const WisdomFrameworks = () => {
   ];
 
   return (
-    <section className="py-32 px-6 bg-maroon relative overflow-hidden">
+    <section className="py-32 px-6 section-white section-smooth section-depth relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
-        <MandalaGrid className="w-full h-full text-gold" />
+        <MandalaGrid className="w-full h-full text-red-200" />
       </div>
       
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-24">
-          <span className="text-gold uppercase tracking-[0.3em] text-xs mb-4 block font-bold">Actionable Wisdom</span>
-          <h2 className="text-5xl md:text-7xl font-serif text-parchment">The Science of Living</h2>
+          <span className="text-red-700 uppercase tracking-[0.3em] text-xs mb-4 block font-bold">Actionable Wisdom</span>
+          <h2 className="text-5xl md:text-7xl font-serif text-neutral-900">The Science of Living</h2>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-12">
@@ -464,17 +464,17 @@ const WisdomFrameworks = () => {
               transition={{ delay: i * 0.1 }}
               className="glass p-10 rounded-3xl border-gold/10 flex flex-col h-full"
             >
-              <span className="text-gold/60 uppercase tracking-widest text-[10px] mb-2 block">{f.subtitle}</span>
-              <h3 className="text-3xl font-serif text-parchment mb-10 border-b border-gold/10 pb-6">{f.title}</h3>
+              <span className="text-neutral-500 uppercase tracking-widest text-[10px] mb-2 block">{f.subtitle}</span>
+              <h3 className="text-3xl font-serif text-neutral-900 mb-10 border-b border-neutral-200 pb-6">{f.title}</h3>
               
               <div className="space-y-8 flex-1">
                 {f.items.map((item, idx) => (
                   <div key={item.name} className="space-y-2">
                     <div className="flex items-center gap-3">
-                      <div className="w-1.5 h-1.5 rounded-full bg-gold" />
-                      <h4 className="text-gold font-medium uppercase tracking-wider text-xs">{item.name}</h4>
+                      <div className="w-1.5 h-1.5 rounded-full bg-red-600" />
+                      <h4 className="text-red-700 font-medium uppercase tracking-wider text-xs">{item.name}</h4>
                     </div>
-                    <p className="text-parchment/60 font-light leading-relaxed pl-4 border-l border-gold/5">
+                    <p className="text-neutral-600 font-light leading-relaxed pl-4 border-l border-red-100">
                       {item.detail}
                     </p>
                   </div>
@@ -557,7 +557,7 @@ const BenefitsSection = () => {
 
 const PreviewSection = () => {
   return (
-    <section id="preview" className="py-32 px-6 section-preview-bg section-smooth section-depth relative overflow-hidden">
+    <section id="preview" className="py-32 px-6 section-white section-smooth section-depth relative overflow-hidden">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-20">
         <div className="flex-1">
           <motion.div
@@ -565,17 +565,17 @@ const PreviewSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <span className="text-gold uppercase tracking-[0.3em] text-xs mb-4 block font-bold">Inside the Pages</span>
-            <h2 className="text-5xl md:text-7xl font-serif mb-8 italic">A Mental Operating System</h2>
-            <p className="text-xl text-parchment/60 font-light leading-relaxed mb-12">
+            <span className="text-red-700 uppercase tracking-[0.3em] text-xs mb-4 block font-bold">Inside the Pages</span>
+            <h2 className="text-5xl md:text-7xl font-serif mb-8 italic text-neutral-900">A Mental Operating System</h2>
+            <p className="text-xl text-neutral-600 font-light leading-relaxed mb-12">
               This is not a motivational book. It is a technical manual for the human mind. 
               Each page is designed with Apple-level precision to ensure the knowledge 
               is not just read, but integrated.
             </p>
             <ul className="space-y-6">
               {['Premium 120gsm Parchment Paper', 'Minimalist Vedic Illustrations', 'Step-by-Step Practice Guides', 'Luxury Hardcover Binding'].map((item) => (
-                <li key={item} className="flex items-center gap-4 text-parchment/80">
-                  <div className="w-1.5 h-1.5 bg-gold rounded-full" />
+                <li key={item} className="flex items-center gap-4 text-neutral-700">
+                  <div className="w-1.5 h-1.5 bg-red-600 rounded-full" />
                   <span className="tracking-wide uppercase text-xs font-medium">{item}</span>
                 </li>
               ))}
@@ -690,7 +690,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-32 px-6 bg-maroon-dark">
+    <section className="py-32 px-6 section-white section-smooth section-depth">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-3 gap-8">
           {reviews.map((review, i) => (
@@ -704,15 +704,15 @@ const Testimonials = () => {
             >
               <div className="flex gap-1 mb-6">
                 {[...Array(review.stars)].map((_, i) => (
-                  <Star key={i} size={14} className="fill-gold text-gold" />
+                  <Star key={i} size={14} className="fill-red-600 text-red-600" />
                 ))}
               </div>
-              <p className="text-lg text-parchment/80 font-light italic mb-8 leading-relaxed">
+              <p className="text-lg text-neutral-700 font-light italic mb-8 leading-relaxed">
                 "{review.text}"
               </p>
               <div>
-                <h4 className="font-serif text-xl text-parchment">{review.name}</h4>
-                <p className="text-xs uppercase tracking-widest text-gold/60 mt-1">{review.role}</p>
+                <h4 className="font-serif text-xl text-neutral-900">{review.name}</h4>
+                <p className="text-xs uppercase tracking-widest text-red-700/60 mt-1">{review.role}</p>
               </div>
             </motion.div>
           ))}
@@ -744,22 +744,22 @@ const PreOrderSection = () => {
   }, []);
 
   return (
-    <section className="py-32 px-6 bg-maroon-dark relative overflow-hidden">
+    <section className="py-32 px-6 section-white section-smooth section-depth relative overflow-hidden">
       <div className="absolute inset-0 opacity-10 pointer-events-none">
-        <LotusGeometry className="absolute -top-20 -right-20 w-[600px] h-[600px] text-gold" />
+        <LotusGeometry className="absolute -top-20 -right-20 w-[600px] h-[600px] text-red-200" />
       </div>
 
-      <div className="max-w-5xl mx-auto glass rounded-[40px] p-12 md:p-24 text-center relative z-10 border-gold/20">
+      <div className="max-w-5xl mx-auto glass rounded-[40px] p-12 md:p-24 text-center relative z-10 border border-red-100">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <span className="inline-block px-4 py-1 bg-gold/10 border border-gold/30 rounded-full text-gold text-[10px] uppercase tracking-widest mb-8">
+          <span className="inline-block px-4 py-1 bg-red-50 border border-red-200 rounded-full text-red-700 text-[10px] uppercase tracking-widest mb-8">
             Limited First Edition
           </span>
-          <h2 className="text-5xl md:text-8xl font-serif mb-8">Reserve Your Legacy</h2>
-          <p className="text-xl text-parchment/60 font-light mb-16 max-w-2xl mx-auto">
+          <h2 className="text-5xl md:text-8xl font-serif mb-8 text-neutral-900">Reserve Your Legacy</h2>
+          <p className="text-xl text-neutral-600 font-light mb-16 max-w-2xl mx-auto">
             Pre-order the premium hardcover edition today and receive the exclusive 
             "Sacred Sound" digital companion and a hand-signed bookmark.
           </p>
@@ -767,21 +767,21 @@ const PreOrderSection = () => {
           <div className="flex justify-center gap-4 md:gap-12 mb-16">
             {Object.entries(timeLeft).map(([label, value]) => (
               <div key={label} className="flex flex-col items-center">
-                <span className="text-4xl md:text-6xl font-serif text-gold mb-2">{value.toString().padStart(2, '0')}</span>
-                <span className="text-[10px] uppercase tracking-[0.2em] text-parchment/40">{label}</span>
+                <span className="text-4xl md:text-6xl font-serif text-red-700 mb-2">{value.toString().padStart(2, '0')}</span>
+                <span className="text-[10px] uppercase tracking-[0.2em] text-neutral-500">{label}</span>
               </div>
             ))}
           </div>
 
           <div className="flex flex-col items-center gap-8">
             <div className="flex items-baseline gap-4">
-              <span className="text-parchment/40 line-through text-2xl font-light">â‚¹2,499</span>
-              <span className="text-parchment text-5xl font-serif">â‚¹1,499</span>
+              <span className="text-neutral-400 line-through text-2xl font-light">â‚¹2,499</span>
+              <span className="text-neutral-900 text-5xl font-serif">â‚¹1,499</span>
             </div>
-            <button className="w-full md:w-auto px-16 py-6 bg-gold text-maroon-dark font-bold uppercase tracking-[0.2em] rounded-full hover:bg-white hover:scale-105 transition-all duration-500 shadow-2xl shadow-gold/20">
+            <button className="w-full md:w-auto px-16 py-6 btn-primary font-bold uppercase tracking-[0.2em]">
               Reserve Your Copy Now
             </button>
-            <p className="text-xs text-parchment/40 uppercase tracking-widest">
+            <p className="text-xs text-neutral-500 uppercase tracking-widest">
               Shipping worldwide starting April 2026
             </p>
           </div>
@@ -793,9 +793,9 @@ const PreOrderSection = () => {
 
 const FinalImpact = () => {
   return (
-    <section className="py-48 px-6 bg-maroon-dark relative flex items-center justify-center text-center">
+    <section className="py-48 px-6 section-white section-smooth section-depth relative flex items-center justify-center text-center">
       <div className="absolute inset-0 opacity-5">
-        <MandalaGrid className="w-full h-full text-gold" />
+        <MandalaGrid className="w-full h-full text-red-200" />
       </div>
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
@@ -804,7 +804,7 @@ const FinalImpact = () => {
         transition={{ duration: 1.5 }}
         className="max-w-4xl relative z-10"
       >
-        <h2 className="text-4xl md:text-7xl font-serif italic leading-tight text-parchment">
+        <h2 className="text-4xl md:text-7xl font-serif italic leading-tight text-neutral-900">
           â€œThis is not just a book. <br />
           It is a discipline system for your mind.â€
         </h2>
@@ -827,17 +827,17 @@ const GlossarySection = () => {
   ];
 
   return (
-    <section className="py-24 px-6 bg-maroon-dark/50">
+    <section className="py-24 px-6 section-white section-smooth section-depth">
       <div className="max-w-7xl mx-auto">
         <div className="mb-16">
-          <span className="text-gold uppercase tracking-[0.3em] text-[10px] mb-2 block font-bold">Wisdom Lexicon</span>
-          <h2 className="text-4xl font-serif">Key Sanskrit Terms</h2>
+          <span className="text-red-700 uppercase tracking-[0.3em] text-[10px] mb-2 block font-bold">Wisdom Lexicon</span>
+          <h2 className="text-4xl font-serif text-neutral-900">Key Sanskrit Terms</h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-8">
           {terms.map((item) => (
-            <div key={item.term} className="border-l border-gold/20 pl-6 py-2">
-              <h4 className="text-gold font-serif text-xl mb-1">{item.term}</h4>
-              <p className="text-parchment/40 text-sm font-light leading-relaxed">{item.meaning}</p>
+            <div key={item.term} className="border-l border-red-200 pl-6 py-2">
+              <h4 className="text-red-700 font-serif text-xl mb-1">{item.term}</h4>
+              <p className="text-neutral-600 text-sm font-light leading-relaxed">{item.meaning}</p>
             </div>
           ))}
         </div>
@@ -848,37 +848,37 @@ const GlossarySection = () => {
 
 const Footer = () => {
   return (
-    <footer className="py-20 px-6 bg-maroon-dark border-t border-white/5">
+    <footer className="py-20 px-6 section-white section-smooth section-depth border-t border-neutral-200">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-12 mb-16">
           <div className="flex items-center gap-3">
-            <DharmaChakra className="w-8 h-8 text-gold" />
-            <span className="font-serif text-xl tracking-widest uppercase text-parchment">Maha Mantras</span>
+            <DharmaChakra className="w-8 h-8 text-red-600" />
+            <span className="font-serif text-xl tracking-widest uppercase text-neutral-900">Maha Mantras</span>
           </div>
           
           <div className="flex gap-12">
             {['Privacy', 'Terms', 'Shipping', 'Contact'].map((item) => (
-              <a key={item} href="#" className="text-[10px] uppercase tracking-widest text-parchment/40 hover:text-gold transition-colors">
+              <a key={item} href="#" className="text-[10px] uppercase tracking-widest text-neutral-500 hover:text-red-700 transition-colors">
                 {item}
               </a>
             ))}
           </div>
 
           <div className="flex gap-6">
-            <a href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-parchment/60 hover:border-gold hover:text-gold transition-all">
+            <a href="#" className="w-10 h-10 rounded-full border border-neutral-200 flex items-center justify-center text-neutral-500 hover:border-red-300 hover:text-red-700 transition-all">
               <Instagram size={18} />
             </a>
-            <a href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-parchment/60 hover:border-gold hover:text-gold transition-all">
+            <a href="#" className="w-10 h-10 rounded-full border border-neutral-200 flex items-center justify-center text-neutral-500 hover:border-red-300 hover:text-red-700 transition-all">
               <Twitter size={18} />
             </a>
-            <a href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-parchment/60 hover:border-gold hover:text-gold transition-all">
+            <a href="#" className="w-10 h-10 rounded-full border border-neutral-200 flex items-center justify-center text-neutral-500 hover:border-red-300 hover:text-red-700 transition-all">
               <Linkedin size={18} />
             </a>
           </div>
         </div>
         
         <div className="text-center">
-          <p className="text-[10px] uppercase tracking-[0.3em] text-parchment/20">
+          <p className="text-[10px] uppercase tracking-[0.3em] text-neutral-400">
             Â© 2026 Maha Mantras Publishing. All Rights Reserved.
           </p>
         </div>
@@ -891,7 +891,7 @@ const Footer = () => {
 
 export default function App() {
   return (
-    <div className="bg-maroon-dark text-parchment selection:bg-gold/30 premium-theme">
+    <div className="bg-white text-neutral-900 selection:bg-red-200 premium-theme">
       <Navbar />
       <Hero />
       <AuthoritySection />
@@ -908,6 +908,10 @@ export default function App() {
     </div>
   );
 }
+
+
+
+
 
 
 
